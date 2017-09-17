@@ -8,6 +8,7 @@
     <ListView
         android:id="@+id/lv_simple"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
+        android:layout_height="match_parent" />
+    <!-- 宽高尽量使用match_parent, 因为使用wrap_content时会产生怪异现象，及当一屏显示条目过少时，
+         Adapter中的getView()方法可能会执行多余实际条目数的次数，多次尝试来看一屏能不能展示完所有的条目数-->
 </RelativeLayout>
